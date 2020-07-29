@@ -1,5 +1,8 @@
 pipeline {
  agent any
+ triggers {
+        cron('H/1 * * * *')
+    }
  parameters {
      choice(name: 'VERSION', choices:['1.1','1.2','1.3','1.4'], description:'TesT')
      booleanParam(name: 'excutetest', defaultValue: true, description:'')
