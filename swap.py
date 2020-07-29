@@ -1,5 +1,5 @@
 x = 15
-y = 20
+y = 25
 
 # To take inputs from the user
 #x = input('Enter value of x: ')
