@@ -1,7 +1,7 @@
 pipeline {
  agent any
  triggers {
-        cron('*/3 * * *')
+        cron('*/3 * * * *')
     }
  parameters {
      choice(name: 'VERSION', choices:['1.1','1.2','1.3','1.4'], description:'TesT')
